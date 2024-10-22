@@ -10,7 +10,7 @@ Create a description and help text for the formula field.
 # Lead Score Enhancement 
 ## Find related leads or contacts with the same email
 Write a Salesforce Apex trigger to find related leads or contacts with the same email and update the rating(Rating) to "Hot" if found.
-Here is my initial code to find related leads or contacts:
+Use this initial trigger code:
 ```
 for (Lead lead : trigger.new) {
 	List<Lead> foundLeads = [SELECT Id, Email FROM Lead WHERE Email = :lead.Email];
